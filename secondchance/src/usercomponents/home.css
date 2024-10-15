@@ -1,0 +1,429 @@
+body {
+    overflow-x: hidden;
+}
+
+.btn-up {
+    border: 1px solid;
+    border-color: rgb(249, 89, 41);
+    color: rgb(249, 89, 41);
+    font-weight: 600;
+}
+
+.btn-in {
+    background-color: rgb(228, 85, 43);
+    color: white;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: rgb(228, 85, 43);
+}
+
+.brnd {
+    color: rgb(249, 87, 39);
+    font-weight: bolder;
+    font-size: 30px;
+    padding-left: 60px;
+}
+
+.nav-items {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
+.nav-items:hover {
+    color: rgb(51, 51, 51);
+}
+
+.intro-head {
+    font-size: 40px;
+}
+
+.jail-food {
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(249, 87, 39);
+}
+
+.jail-food-para {
+    color: rgb(171, 173, 175);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.intro-btn {
+    background-color: rgb(231, 87, 44);
+    color: white;
+    border: 1px solid;
+    border-color: rgb(231, 87, 44);
+    border-end-start-radius: 30px;
+    border-top-right-radius: 30px;
+    border-end-end-radius: 30px;
+    padding: 10px 20px 10px 20px;
+}
+
+.trend-image {
+    border-radius: 100%;
+    margin-left: 50px;
+    margin-top: -25px;
+}
+
+.col-items {
+    background-color: rgb(255, 255, 255);
+    margin-left: 100px;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    margin-bottom: 50px;
+    width: 16rem;
+    padding-left: 14px;
+}
+
+.price-style {
+    color: rgb(249, 96, 51);
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 12px;
+}
+
+.trend-buy-button {
+    background-color: rgb(231, 87, 44);
+    color: white;
+    border: 1px solid;
+    border-color: rgb(231, 87, 44);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-end-end-radius: 30px;
+    padding: 6px 16px 6px 10px;
+    margin-top: 15px;
+    margin-left: -12px;
+    margin-bottom: -5px;
+}
+
+.carousel-container {
+    /* background-color: rgb(247, 245, 243); */
+    border-radius: 12px;
+    margin-top: 80px;
+}
+
+.trend-name {
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: bold;
+    margin-top: -10px;
+}
+
+.trend-desc {
+    color: rgb(171, 173, 175);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.top-coll-card {
+    border: none;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    background-color: rgb(248, 244, 229);
+}
+
+.top-coll-img {
+    border-top-right-radius: 15%;
+}
+
+.top-coll-btn {
+    background-color: rgb(222, 82, 41);
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 3px 10px 3px 10px;
+}
+
+.footer-container {
+    background-image: url(/public/blackback.jpg);
+    height: 300px;
+    margin-top: 170px;
+}
+
+.jail-address {
+    color: rgb(154, 151, 151);
+}
+
+.food-card {
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.food-card-image {
+    border-radius: 100%;
+    margin-top: -100px;
+    mix-blend-mode: multiply;
+}
+
+.cart-logo {
+    /* style={{ fontSize: "30px", color: "rgb(249, 87, 39)" }} */
+    font-size: 30px;
+    color: rgb(249, 87, 39);
+    cursor: pointer;
+}
+
+
+
+.modal-price {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.add-cart {
+    background-color: rgb(249, 68, 23);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    width: 170px;
+    height: 45px;
+}
+
+.qt-box {
+    background-color: rgb(214, 214, 214);
+    border: none;
+    border-radius: 4px;
+    color: rgb(118, 118, 118);
+    width: 170px;
+    height: 45px;
+}
+
+.plus {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.minus {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.cart-col {
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+
+.cart-qt {
+    margin-left: 100px;
+    margin-top: 42px;
+
+}
+
+.cart-item-name {
+    width: 126px;
+    margin-left: 50px;
+    margin-top: 42px;
+}
+
+.cart-total {
+    margin-left: 100px;
+    margin-top: 42px;
+    width: 60px;
+}
+
+.cart-delete {
+    margin-left: 70px;
+    margin-top: 42px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.payment-col {
+    background-color: rgb(86, 90, 187);
+    border-radius: 15px;
+    width: 360px;
+    margin-left: 120px;
+}
+
+.payment-form {
+    background-color: rgb(98, 104, 198);
+    border: none;
+    color: rgb(176, 177, 196);
+}
+
+.payment-form::placeholder {
+    color: rgb(176, 177, 196);
+}
+
+.payment-form:focus {
+    background-color: rgb(98, 104, 198);
+
+}
+
+.payment-head {
+    color: white;
+    font-size: 25px;
+}
+
+.payment-label {
+    color: rgba(255, 255, 255, 0.932);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.subtotal {
+    margin-top: -24px;
+}
+
+.chk-out-btn {
+    background-color: rgb(77, 225, 193);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-style {
+    background-color: rgb(98, 104, 198);
+    border-radius: 8px;
+}
+
+.cfm-details {
+    background-color: rgb(246, 246, 246);
+}
+
+.newlogin {
+    background-color: rgb(228, 85, 43);
+    color: white;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: rgb(228, 85, 43);
+    margin-top: 30px;
+    height: 50px;
+    width: 100px;
+}
+
+.cancel-p {
+    width: 155px;
+    border: 1px solid;
+    border-color: rgb(220, 220, 220);
+    background-color: #ffff;
+
+}
+
+.confirm-p {
+    width: 155px;
+    border: none;
+    background-color: rgb(118, 116, 228);
+    color: white;
+}
+
+.right-align {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay-msg {
+    color: rgb(165, 168, 183);
+    font-weight: 400;
+}
+
+.shop-more {
+    background-color: rgb(235, 11, 45);
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.order-nav {
+    background-color: rgb(245, 246, 248);
+    color: rgb(116, 124, 132);
+    border: none;
+    border-radius: 20px;
+}
+
+.active,
+.order-nav:hover {
+    background-color: rgb(249, 87, 39);
+    color: white;
+
+}
+
+.head-div {
+    font-weight: 700;
+}
+
+.t-heads {
+    color: rgb(116, 124, 132) !important;
+}
+
+.t-pro-name {
+    font-weight: 700;
+}
+
+.ord-subtotal {
+    margin-top: -25px;
+}
+
+
+
+
+
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.edu-au-vic-wa-nt-hand-intro {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.belleza-regular {
+    font-family: "Belleza", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@media(max-width:992px) {
+    .img-side {
+        display: none;
+    }
+
+    .intro-head {
+        display: block !important
+    }
+
+    .btn-in {
+        margin-top: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100px;
+    }
+
+    .btn {
+        margin-top: 10px;
+        width: 100px;
+    }
+
+    .footer-container {
+        height: 700px;
+    }
+
+    .top-collection-row {
+        justify-content: center;
+    }
+
+    .payment-col {
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+
+    .ord-subtotal {
+        margin-top: 10px;
+    }
+
+}

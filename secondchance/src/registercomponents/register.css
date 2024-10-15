@@ -1,0 +1,82 @@
+.input-areas{
+    width: 350px;
+    border: 1px solid;
+    border-color: rgb(223, 223, 223);
+    border-radius: 4px ;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.input-areas:hover{
+    border: 2px solid;
+    border-color: rgb(241, 84, 38);
+}
+
+.lg-btn{
+    width: 330px;
+    background-color:rgb(214, 214, 214) ;
+    color: rgb(118, 118, 118);
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: rgb(214, 214, 214);
+}
+
+.lg-btn:hover{
+    background-color: rgb(249, 68, 23);
+    border-color: rgb(249, 68, 23);
+    color: white;
+}
+
+.sg-btn{
+    width: 330px;
+    background-color: rgb(249, 68, 23) ;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: rgb(214, 214, 214);
+}
+
+.sg-btn:hover{
+    background-color:rgb(214, 214, 214);
+    border-color: rgb(214, 214, 214);
+    color: rgb(118, 118, 118);
+}
+
+.ad-log-back{
+    height: 100vh;
+    background-image: url(/public/adminback.png);
+    background-repeat: no-repeat;
+    margin-left: -12px;
+}
+.form-area{
+    margin-top: 150px;
+    margin-left: 80px;
+}
+.area-head{
+    font-weight: 300;
+}
+.area-sub{
+    font-weight: 300;
+}
+.admin-fields{
+    border: 1px solid;
+    border-color: rgb(207, 213, 219);
+    outline: none;
+    border-radius: 12px;
+    height: 50px;
+    width: 350px;
+}
+.admin-sign-btn{
+    border: 1px solid;
+    border-color: rgb(10, 88, 202);
+    background-color: rgb(48, 125, 238);
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+@media(max-width:992px) {
+    .ad-log-back{
+        display: none;
+    }
+}
