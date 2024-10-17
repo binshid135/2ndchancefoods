@@ -71,8 +71,7 @@ router.get('/storegetorder', async (req, res) => {
         fullorder.push(mainOrder)
     }
 
-    // console.log(fullorder);
-    console.log(alltotal);
+    // console.log(alltotal);
     
 
 

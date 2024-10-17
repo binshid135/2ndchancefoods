@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row, Container, Table, Form } from 'react-bootstrap'
+import { Col, Row, Container, Table, Form, Modal } from 'react-bootstrap'
 import MainNavbar from '../Admincomponents/MainNavbar'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
@@ -52,6 +52,12 @@ const OrderArea = () => {
         }
     };
 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+
 
 
 
@@ -70,7 +76,8 @@ const OrderArea = () => {
                             <tr>
                                 <th>OrderID</th>
                                 <th>Username</th>
-                                <th>items</th>
+                                {/* <th>items</th> */}
+                                <th>items & Quantity</th>
                                 <th>Order Status</th>
                                 <th>Confirm Order</th>
                             </tr>
@@ -80,7 +87,12 @@ const OrderArea = () => {
                                 <tr key={i.id} >
                                     <td>{i.mainid}</td>
                                     <td>{i.user.username}</td>
-                                    <td>{i.newsub.length} items</td>
+                                    <td>
+                                        {i.newsub.map((j) => (
+                                           <div>{j.product.name}-{j.quantity}</div>
+                                        ))}
+                                    </td>
+
                                     <td><button style={{ border: "2px solid", borderColor: getColor(i.status), borderRadius: "12px", backgroundColor: "white", color: getColor(i.status) }} className='pt-1 ps-2 pb-1 pe-2'>{i.status}</button></td>
                                     <td>
                                         {(i.status === "pending" || i.status === "confirmed") ?
@@ -96,15 +108,17 @@ const OrderArea = () => {
                                             </Form>
                                             : <h1></h1>
                                         }
-
                                     </td>
+
                                     <td></td>
                                 </tr>
+
                             ))}
                         </tbody>
                     </Table>
                 </Col>
             </Row>
+
         </>
     )
 }

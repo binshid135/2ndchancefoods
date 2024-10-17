@@ -17,7 +17,7 @@ const ConfirmArea = () => {
     useEffect(() => {
         axios.get(`http://localhost:8080/delivery/showorder`).then(response => {
             console.log(response.data.data);
-            ordfunc(response.data.data.filter(item=>item.status=="confirmed"))
+            ordfunc(response.data.data.filter(item => item.status == "confirmed"))
         })
     }, [])
     const img = 'http://localhost:8080/'
@@ -66,7 +66,7 @@ const ConfirmArea = () => {
                 </Col>
             </Row>
             <Row className='justify-content-center mt-4' style={{ backgroundColor: "rgb(243, 243, 243)" }}>
-                <Col lg={11} className='table-row pt-5 ps-5 pb-5 pe-5 mb-5'>
+                <Col lg={12} className='table-row pt-5 ps-5 pb-5 pe-5 mb-5'>
                     <Table responsive className='user-view-table'>
                         <thead>
                             <tr>
@@ -86,7 +86,11 @@ const ConfirmArea = () => {
                                     <td>{i.date}</td>
                                     <td>{i.user.username}</td>
                                     <td>{i.user.mobile}</td>
-                                    <td>{i.newsub.length}</td>
+                                    <td>
+                                        {i.newsub.map((j) => (
+                                            <div>{j.product.name}-{j.quantity}</div>
+                                        ))}
+                                    </td>
                                     <td ><button style={{ border: "2px solid", borderColor: getColor(i.status), borderRadius: "12px", backgroundColor: "white", color: getColor(i.status) }} className='pt-1 ps-1 pb-1 pe-1'>{i.status}</button></td>
                                     <td>
                                         <select className='custom-select' value={i.status} onChange={(e) => changestatus(index, i.mainid, e.target.value)}>
