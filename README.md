@@ -99,7 +99,6 @@ Public Login: A separate login page is available for public users.
 Notes:
 Make sure you have MongoDB running locally or provide a MongoDB Atlas URI in your .env file.
 You can customize roles and permissions within the application, as well as manage user accounts directly through the admin interface.
-This updated README includes the specific URLs for the admin login and the initial admin setup, helping users easily navigate the application.
 
 
 
