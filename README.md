@@ -74,7 +74,7 @@ Start the backend server using:
 bash
 Copy code
 npm start
-This will start the Node.js server on http://localhost:5000 (or whichever port you configured).
+This will start the Node.js server on http://localhost:3000 (or whichever port you configured).
 
 6. Install the frontend dependencies
 Now, navigate to the frontend folder and install the required packages:
